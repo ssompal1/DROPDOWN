@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>dropdown menus study</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+    <body>
+        <div id="intro-panel">
+            <h1 id="intro-title">Dropdown Menus</h1>
+            <h1 id="intro-title">A Case Study on Learnability, Memorability, Efficiency, and Accessibility</h1>
+        </div>
+    
+        <div id="body-panel">
+            <div id="first-row-panel">
+                <h1>Looking at Commonly Used Dropdown UIs</h1>
+                <p id="black-text">Dropdown menus are a commonly used tool to help users navigate through a set of options on an interface. Below are some common examples dropdown menus on major tools.</p>
+                <div id="grid">
+                <div class="item">
+                    <h2>Google Tab Group Dropdown</h2>
+                    <img src="google.png" alt="Google Search Dropdown">
+                </div>
+                <div class="item">
+                    <h2>Apple File Menu Dropdown</h2>
+                    <img src="apple.png" alt="Apple File Dropdown">
+                </div>
+                <div class="item">
+                    <h2>Zotero Library Menu Dropdown</h2>
+                    <img src="zotero.png" alt="Zotero Library Dropdown">
+                </div>
+            </div>
+            </div>
+            <div id="second-row-panel">
+            <div id="second-row-text">
+                <h1>Dropdown Comparison Table</h1>
+                <p id="black-text">Let's compare some dropdowns embedded within Google, Apple, and Zotero, and see how they compare in terms of navigation and more specifically, learnability, memorability, and efficiency</p>
+            </div>
+
+            <h2>Inputs</h2>
+            <div id="table-compare">
+            </div>
+            <h2>Mouse User</h2>
+            <div id="mouse-grid">
+                <div class="item">
+                <h2>Google Tab Group Dropdown</h2>
+                <ul>
+                    <li>Single slick access</li>
+                    <li>Hover over menu items</li>
+                    <li>Hover away keeps menu open</li>
+                  </ul>
+                </div>
+                <div class="item">
+                <h2>Apple File Menu Dropdown</h2>
+                <ul>
+                    <li>Single slick access</li>
+                    <li>Hover over menu items</li>
+                    <li>Hover away opens different menus</li>
+                  </ul>
+                </div>
+                <div class="item">
+                <h2>Zotero Library Menu Dropdown</h2>
+                <ul>
+                    <li>Single slick access</li>
+                    <li>Hover over menu items</li>
+                    <li>Hover away keeps menu open</li>
+                  </ul>
+            </div>
+</div>
+            <h2>Keyboard User</h2>
+            <div id="key-grid">
+                <div class="item">
+                <h2>Google Tab Group Dropdown</h2>
+                <ul>
+                    <li>Holding down arrow goes steadily down items stopping at last menu</li>
+                    <li>left/right keys do nothing</li>
+                    <li>enter/spacebar click on menu item</li>
+                    <li>Dropdown menu skipped in tabbing to get to menu</li>
+                  </ul>
+                </div>
+                <div class="item">
+                <h2>Apple File Menu Dropdown</h2>
+                <ul>
+                    <li>Holding down arrow key steadily goes down menu stopping at last item</li>
+                    <li>right/left arrows/tab change dropdown, rapidly change and restart with holding down</li>
+                    <li>Initial navigation to file menu (cntrl+option+F2) difficult to do/requires two hands</li>
+                  </ul>
+                </div>
+                <div class="item">
+                <h2>Zotero Library Menu Dropdown</h2>
+                <ul>
+                    <li>Holding down arrow rapidly goes down list and restarts at top</li>
+                    <li> No other neighboring menu, left/right keys do nothing</li>
+                    <li>Tab changes to next dropdowns/x buttons </li>
+                  </ul>
+            </div>
+
+            </div>
+            <h2>Outputs</h2>
+            <h2>Color</h2>
+            <div id="color-grid">
+                <div class="item">
+                <h2>Google Tab Group Dropdown</h2>
+                <ul>
+                    <li>Fill button light grey for access</li>
+                    <li>No change from hover color on button clicks</li>
+                  </ul>
+                </div>
+                <div class="item">
+                <h2>Apple File Menu Dropdown</h2>
+                <ul>
+                    <li>Fill button blue for hover</li>
+                    <li>No change from hover color on button click</li>
+                  </ul>
+                </div>
+                <div class="item">
+                <h2>Zotero Library Menu Dropdown</h2>
+                <ul>
+                    <li>Fill button light grey for hover</li>
+                    <li>No change from hover color on button click</li>
+                  </ul>
+            </div>
+        </div>
+            <h2>Focus Order</h2>
+            <div id="focus-grid">
+                <div class="item">
+                <h2>Google Tab Group Dropdown</h2>
+                <ul>
+                    <li>Tab key does nothing</li>
+                  </ul>
+                </div>
+                <div class="item">
+                <h2>Apple File Menu Dropdown</h2>
+                <ul>
+                    <li>Tab key navigates to next menu dropdowns</li>
+                  </ul>
+                </div>
+                <div class="item">
+                <h2>Zotero Library Menu Dropdown</h2>
+                <ul>
+                    <li>Tab press moves focus to “x” button of reading, then to following reading</li>
+                  </ul>
+            </div>
+        </div>
+        <h2>VoiceOver/Alt Text</h2>
+        <div id="alt-grid">
+            <div class="item">
+            <h2>Google Tab Group Dropdown</h2>
+            <ul>
+                <li>Announce “menu” and number of items</li>
+                    <li>At each menu item, alt next provided for the menu items</li>
+              </ul>
+            </div>
+            <div class="item">
+            <h2>Apple File Menu Dropdown</h2>
+            <ul>
+                <li>At selection of menu states “menu” and the number of items</li>
+                <li>At each menu item, alt next provided for the menu items</li>
+              </ul>
+            </div>
+            <div class="item">
+            <h2>Zotero Library Menu Dropdown</h2>
+            <ul>
+                <li>Announce menu for button group</li>
+                <li>Read button group out for each button</li>
+                <li>Button group for each part of dropdown was confusing —–not clear what the button group was for from the library</li>
+              </ul>
+        </div>
+    </div>
+            <h2>Reflections on Dropdown Examples on Learnability, Memorability, Efficiency, and Accessibility</h2>
+            <p id="black-text">Overall, the three dropdowns were quite similar in terms of their inputs/outputs and therefore similar in their learnability, memorability, and efficiency. They all followed standards for click and mouse navigation via hovering, making them very learnable and subsequently memorable for mouse users. </p>
+            <p id="black-text"> <b>Keyboard Users:</b> Standard key presses for tab and space/enter to enter and click did the same. Using the up/down arrow keys for navigating menu items was both intuitive with direction, making them learnable and navigable. For Zotero, the rapid speed of descent for holding down keys and restarting at the top of the list improved efficiency, but may detract from accessibility as the screenreader could not keep up with the speed of menu item change in comparison to Apple and Google's slower descent on menu items. </p>
+             <p id="black-text"> <b>Accessibility:</b> Overall, Zotero was less accessible as not all of the buttons were accessible through keyboard, the left/right keys did not move the cursor for the search box, and the alt text was more dense and difficult to parse in comparison to Google and Apple.</p>
+        </div>
+    
+            <div id="third-row-panel">
+                <div id="second-row-text">
+                    <h1>Zotero Dropdown: A Case Study</h1>
+                    <p id="black-text">Zotero is a research tool used to generate citations, organize documents, and take notes. This case study assesses its dropdown menu's learnability, memorability, and efficiency for both keyboard and mouse users.</p>
+                    <br></br>
+                    <p id="black-text">Let's start with mapping out the different states of Zotero's dropdown menu and what inputs it takes to change states. Here are the state models for mouse and keyboard users</p>
+                </div>
+    
+                <h2>Current State Models</h2>
+                <div id="image-container">
+                    <img src="../mouse_user_1.png" alt="State Model 1">
+                    <img src="../keyboard_user_1.png" alt="State Model 2">
+                </div>
+                <br>
+                <p id="black-text">The hover and focus states differ between keyboard and mouse users. Navigating through readings after deleting any from the current tab menu is more difficult for keyboard users as they are automatically reoriented to start at the beginning of the menu group. I propose a different state model which directs keyboard users to the next menu item after the deletion of the previous menu item, mimicking the interaction of a mouse user in which the mouse leaves off in its original position. </p>
+                <p id="black-text">To reflect this change in the mouse user, I distinguish between where the mouse user releases their click, reflecting a tradeoff that benefits the efficiency of keyboard users but decrease the learnability and efficiency of mouse users.</p>
+                <h2>Proposed State Models</h2>
+                <div id="image-container">
+                    <img src="../mouse_user_2.png" alt="Proposed State Model 1">
+                    <img src="../keyboard_user_2.png" alt="Proposed State Model 2">
+                </div>
+
+                <h2>Dropdown Redesign with Proposed State Model</h2>
+                <p id="black-text">One thing I noticed in my navigation of Zotero was that there was a surprise drag and drop potential of the readings which wasn't immediately clear on first glance. Let's propose a redesign of the menu that makes this feature more evident</p>
+    
+                <div id="figma-container">
+                    <img src="../default_state.png" alt="Proposed Redesign Initial State">
+                    <img src="../focus_state.png" alt="Proposed Redesign Focus State">
+                </div>
+                <p id="black-text"> Through this redesign, I made more explicit the different possibilities that the user has to interact with a reading by adding a drag button to make clear that the user can drag to reorder the different readings. This version improves the learnability of the library dropdown by making immediately clear to users that they have an option to reorder the readings. It improves memorability by reminding users of this functionality visually every time they visit the tool, and it improves both efficiency and accessibility by enabling users to place readings in the order they choose and navigate more quickly to more frequently accessed readings. </p>
+            </div>
+    
+            <div id="fourth-row-panel">
+                <h1>Reflections</h1>
+                <p id="white-text">Looking at a variety of dropdown menus, particularly created by companies with bases of millions of users gave me multiple well-established frames of reference to compare benefits and costs of different implementations of dropdown menus.</p>
+                <p id="white-text">I liked that the Apple File Menu announced the number of items in the dropdown to give the user more idea of what the rest of the dropdown looked like on preview. Overall all the components were clear in indicating when a button was being hovered over, and were for the most part very easy to navigate with key and with mouse. I maintained the hover color indicator in my design as well. </p>
+                <p id="white-text">There were some limited accessibility with regards to the ability to close out readings in the Zotero dropdown. I integrated both both button focus and the ability to close out a reading using the “X” button into my redesign. </p>
+               <br>
+                <p id="white-text"><b>Zotero Reflections: </b>With Zotero, I noticed both strongly accessible and some potential improvements parts of the dropdown First, as mentioned previously, there was no ability to access the “X” button on readings through the keyboard. This could negatively impact screenreader users by making it more difficult for them to clear their open tabs and subsequently have to sift through more menu items since the only way to do this is to navigate back through the home page. On the flipside, one helpful</p>
+                <p id="white-text">For Zotero, I believe that mouse users are the most commonly prioritized in the creation of components because it is primarily a Desktop app and mouse use seems like the most used input for users that are not visually impaired. This is because is the most learnable, memorable, and efficient precisely because it is the most intuitive for a first time use. The user does not need to learn or memorize specific key tasks and can use the mouse to navigate the visual field. I believe that the prioritization of this could negatively impact the user experience for keyboard as there are tradeoffs. </p>
+            </div>
+        </div>
+    </body>
